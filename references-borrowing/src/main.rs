@@ -24,6 +24,6 @@ fn return_num(v: &i32, v1: &i32) -> i32 {
 
 
 fn append_string(some_string: &mut String) -> String {
-    some_string.push_str(" Chandra");
+    some_string.push_str(" Chandra Shekar");
     some_string.to_string()
 }
