@@ -10,6 +10,7 @@ fn main() {
     // Structs can be used by creating on instance of Struct model (Ex: reffer User struct model & user instance).
     // Structs uses (.)dot notation to access perticular value.
     // Struct instance values can be modified if the instance is mutable(mut - keyword).
+    // Entire Struct instance is mutable, individual value in struct instance can not be made as mutabel.
 
     // User struct model
 
