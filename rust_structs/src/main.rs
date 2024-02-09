@@ -11,6 +11,8 @@ fn main() {
     // Structs uses (.)dot notation to access perticular value.
     // Struct instance values can be modified if the instance is mutable(mut - keyword).
     // Entire Struct instance is mutable, individual value in struct instance can not be made as mutabel.
+    // Structs are extandable
+
 
     // User struct model
 
@@ -47,8 +49,27 @@ fn main() {
     let mut heading = String::from("Access user details from user instance using (.)dot notation");
     println!("{:?}", print_heading(&mut heading));
 
+    // Access user details with user instance
     println!("{:?}, {:?}, {:?}, {:?}", user.active, user.username, user.email, user.sign_in_count);
+    
+    // Access persons details with persons instance.
     println!("{:?}, {:?}", person1.first_name, person1.last_name);
+
+    
+    // Extending person2 with persion1 instance.
+    let mut person2 = Person {
+        ..person1
+    };  
+
+    person2.first_name = String::from("Person2 First Name"); 
+
+    // Access person2 data.
+    println!("{:?}", &person2.first_name);
+
+    // Accessing person1 data
+    // println!("{:?}", &person1.first_name);
+
+
 
     // let mut anoter_heading = String::from("Another_heading");
     // println!("{:?}", print_heading(&mut anoter_heading));
